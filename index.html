@@ -1,7 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Talboo - Game Designer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+  <header class="Me">
+    <div class="Me-content">
+      <h1>Laura Talamanca</h1>
+      <p class="typewriter">Game Designer | Narrative Designer</p>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+ <section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <!-- Tarjetas de proyecto -->
+  <div class="project-card clickable">
+    <div class="card-header">
+      <h3>Shelley Manor</h3>
+      <button class="btn game-btn toggle-btn">View Details</button>
+    </div>
+    <div class="card-content hidden">
+      <p>A Third-Person puzzles game. Unreal Engine 5.2 | Narrative Designer and Game Designer </p>
+      <img src="assets/images/shelleymanor_mainimage.png" alt="Shelley Manor Poster" style="width: 100%; margin-top: 1rem;" />
+      <video controls style="width: 100%; margin-top: 1rem;">
+        <source src="assets/videos/ShelleyManor-trailer.mp4" type="video/mp4">
+        Video not supported.
+      </video>
+      <p><a href="https://store.steampowered.com/app/2999270/Shelley_Manor/" target="_blank">Play on Steam</a></p>
+    </div>
+  </div>
+  <!-- Añadir tarjetas de proyecto aquí -->
+</section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:lauratalamanca18@gmail.com">lauratalamanca18@gmail</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/laura-talamanca/" target="_blank">Laura Talamanca</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Laura Talamanca. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
