@@ -75,12 +75,15 @@ h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   border-bottom: 2px solid #333;
-  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /* Cartas de projecto */
 .project-card {
   width: 200px;
+  height: 50px;
   margin: 1rem;
   background-color: #1c1c1c;
   border: 2px solid #f0c040;
@@ -91,6 +94,7 @@ h2 {
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
+
 }
 
 .project-card:hover {
@@ -106,23 +110,7 @@ h2 {
   border-bottom: 2px solid #f0c040;
 }
 
-.card-content {
-  padding: 1rem;
-  background-color: #2a2a2a;
-  color: #fff;
-  display: none;
-}
 
-.card-content.visible {
-  display: block;
-}
-
-.project-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
 
 /* Footer */
 footer {
@@ -158,31 +146,6 @@ footer {
   box-shadow: 0 2px 0 #a07020;
 }
 
-/* Expandable Card Styles */
-.clickable {
-  cursor: pointer;
-}
-
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.card-content {
-  margin-top: 1rem;
-  border-top: 1px solid #333;
-  padding-top: 1rem;
-  display: none;
-}
-
-.card-content.hidden {
-  display: none;
-}
-
-.card-content.visible {
-  display: block;
-}
 
 /* Carousel */
 .carousel-container {
@@ -190,6 +153,8 @@ footer {
   align-items: center;
   overflow: hidden;
   position: relative;
+  justify-content: center;
+
 }
 
 .carousel-track {
@@ -268,8 +233,8 @@ footer {
   border-radius: 12px;
   padding: 2rem;
   width: 90%;
-  max-width: 600px;
-  max-height: 80vh;
+  max-width: 1080px;
+  max-height: 90vh;
   overflow-y: auto;
   position: relative;
   box-shadow: 0 0 20px rgba(240, 192, 64, 0.8);
@@ -278,7 +243,7 @@ footer {
 
 
 a {
-  color: #00ffd0; /* bright cyan-like */
+  color: #00ffd0; 
   text-decoration: none;
 }
 
@@ -302,3 +267,35 @@ a:visited {
   border: none;
   user-select: none;
 }
+
+.about-section {
+  padding: 40px;
+  background-color: #111; 
+  color: #fff;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap; 
+}
+
+.about-image {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+

@@ -14,15 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('project-modal');
   const modalContent = modal.querySelector('.modal-content');
   const closeBtn = modal.querySelector('.close-btn');
-  const openSound = new Audio('assets/audio/modal-open.FLAC');
-  const closeSound = new Audio('assets/audio/modal-close.FLAC');
+  const openSound = new Audio('assets/audio/modal-open.flac');
+  const closeSound = new Audio('assets/audio/modal-close.flac');
 
   // Project data
   const projectData = {
     ShelleyManor: {
       title: 'Shelley Manor',
       description: 'A Third-Person puzzle game.',
-      image: 'assets/images/ShelleyManor_screenshot.png',
+      image: 'assets/images/ShelleyManor_Family.jpg',
       video: 'assets/videos/ShelleyManor_trailer.mp4',
       link: 'https://store.steampowered.com/app/2999270/Shelley_Manor/'
     }
