@@ -21,14 +21,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectData = {
     ShelleyManor: {
       title: 'Shelley Manor',
-      description: 'A Third-Person puzzle game.',
-      image: 'assets/images/ShelleyManor_Family.jpg',
-      video: 'assets/videos/ShelleyManor_trailer.mp4',
+      description: `
+        <p><strong>Shelley Manor</strong> is a combination of reality and fantasy in the modern era. It takes place in a mansion, which has an atmosphere of tension and mystery. The enemies that inhabit the mansion are familiar, as they are monsters from classical literature and mythology.</p>
+        <br>
+        <p>The central focus of the gameplay is the exploration of the mansion from a third-person viewpoint, where the helpless player finds himself trapped and must avoid enemies while solving the puzzles. Hide through the levels, use objects to distract and confuse enemies, and interact with the environment to solve puzzles and escape alive.</p>
+        <br>
+        <p>The soundtrack, created by the Berkeley Campus in Valencia, features string and percussion instruments to enhance the atmosphere of mystery.</p>
+      `,
+      image: 'assets/images/ShelleyManor_Poster.png',
+      video: 'assets/videos/ShelleyManor_Trailer.mp4',
+      video2: 'assets/videos/ShelleyManor_Intro.mp4',
       link: 'https://store.steampowered.com/app/2999270/Shelley_Manor/'
     }
   };
 
-  // Open modal
+  // Check Data from the project card to open
   document.querySelectorAll('.project-card').forEach(card => {
     card.addEventListener('click', () => {
       const key = card.dataset.project;
@@ -36,13 +43,17 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!data) return;
 
       document.getElementById('modal-title').textContent = data.title;
-      document.getElementById('modal-description').textContent = data.description;
+      document.getElementById('modal-description').innerHTML = data.description; //  <br> <p>
       document.getElementById('modal-image').src = data.image;
-      document.getElementById('modal-video').src = data.video;
+      document.getElementById('modal-video-1').querySelector('source').src = data.video;
+      document.getElementById('modal-video-1').load();
+      document.getElementById('modal-video-2').querySelector('source').src = data.video2;
+      document.getElementById('modal-video-2').load();
       document.getElementById('modal-link').href = data.link;
 
       modal.classList.remove('hidden');
       modal.classList.add('show');
+      document.body.classList.add('modal-open'); // Disable background scroll
       openSound.play();
     });
   });
@@ -51,6 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function closeModal() {
     closeSound.play();
     modal.classList.remove('show');
+    document.getElementById('modal-video-1').pause();
+    document.getElementById('modal-video-2').pause();
+    document.body.classList.remove('modal-open'); // Re-enable background scroll
     setTimeout(() => {
       modal.classList.add('hidden');
     }, 300); // Match CSS transition duration
