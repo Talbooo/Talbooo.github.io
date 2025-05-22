@@ -313,26 +313,37 @@ body.modal-open {
   line-height: 1.6;
 }
 
-/* Modal main body */
 .modal-body {
   margin-top: 2rem;
 }
 
-/* Modal videos row */
-.video-row {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
+.video-text-block {
+  margin-top: 40px;
 }
 
-.video-row video {
+.video-intro {
+  margin-bottom: 15px;
+}
+
+.video-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.video-container video {
   width: 100%;
-  max-width: 48%;
+  max-width: 400px;
   border-radius: 10px;
 }
 
-/* Text with images block */
+.video-description {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+}
+
 .text-image-block {
   margin-bottom: 2rem;
 }
