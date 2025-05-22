@@ -68,6 +68,7 @@ body {
 .section {
   padding: 4rem 2rem;
   max-width: 900px;
+  min-height: 1000px;
   margin: 0 auto;
 }
 
@@ -202,6 +203,7 @@ footer {
   justify-content: center;
   gap: 40px;
   max-width: 1000px;
+  min-height: 900px;
   margin: 0 auto;
   flex-wrap: wrap; 
 }
