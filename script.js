@@ -1,14 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
   console.log("Script loaded!");
 
 // Buttons
   const track = document.getElementById('carousel-track');
   document.querySelector('.carousel-btn.left').addEventListener('click', () => {
-    track.scrollBy({ left: -220, behavior: 'smooth' });
+    track.scrollBy({ left: -420, behavior: 'smooth' });
   });
   document.querySelector('.carousel-btn.right').addEventListener('click', () => {
-    track.scrollBy({ left: 220, behavior: 'smooth' });
+    track.scrollBy({ left: 420, behavior: 'smooth' });
   });
+  
 
   // Modal logic
   const modal = document.getElementById('project-modal');
@@ -42,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
       video: 'assets/videos/ShelleyManor_Trailer.mp4',
       video2: 'assets/videos/ShelleyManor_Intro.mp4',
       videodescription: 'Description for the video guapisima',
+      fullbodytext: '<p> Shelley Manor is a combination of reality and fantasy, where the time seems to have stopped before entering the manor walls. You will meet known enemies, all of whom come from classical works, and some allies. Control Alex, a tourist that ended up there after being tricked by the townsfolk. Explore the hallways and rooms and help them escape before it’s too late..;',
       link: 'https://store.steampowered.com/app/2999270/Shelley_Manor/'
     },
   
@@ -54,13 +56,17 @@ document.addEventListener('DOMContentLoaded', () => {
         <br>
         <p>This game was created for the "Pirate Software Game Jam 16".</p>
       `,
-      poster: 'assets/images/ShelleyManor_Poster.png',
-      screen1: 'assets/images/ShelleyManor_Screen1.png',
-      screen2: 'assets/images/ShelleyManor_Screen2.png',
-      screen3: 'assets/images/ShelleyManor_Screen1.png',
+      poster: 'assets/images/YouWontBeKing_Poster.png',
+      imagedescription: "You Won't Be King is so cool",
+      screen1: 'assets/images/YouWontBeKing_Main.png',
+      screen2: 'assets/images/YouWontBeKing_Story.png',
+      screen3: 'assets/images/YouWontBeKing_Game.png',
       screen4: 'assets/images/ShelleyManor_Screen1.png',
-      video: 'assets/videos/ShelleyManor_Trailer.mp4',
+      videointro:'An example of gameplay from the game',
+      video: 'assets/videos/YouWontBeKing_Gameplay.mp4',
       video2: 'assets/videos/ShelleyManor_Intro.mp4',
+      videodescription: 'Main menu, story and game',
+      fullbodytext:'mazo texto',
       link: 'https://talboo.itch.io/you-wont-be-king'
     }
   };
@@ -85,6 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('modal-video-2').load();
       document.getElementById('modal-videodescription').textContent = data.videodescription;
       document.getElementById('modal-link').href = data.link;
+      document.getElementById('modal-text').innerHTML = data.fullbodytext;
 
       modal.classList.remove('hidden');
       modal.classList.add('show');
@@ -92,6 +99,15 @@ document.addEventListener('DOMContentLoaded', () => {
       openSound.play();
     });
   });
+
+  function scrollCarousel(direction) {
+    const track = document.getElementById('carousel-track');
+    const cardWidth = 240 + 16; // card width + gap
+    track.scrollBy({
+      left: direction * cardWidth * 3, // scroll by 3 cards
+      behavior: 'smooth'
+    });
+  }
 
   function closeModal() {
     closeSound.play();

@@ -123,16 +123,6 @@ footer {
   box-shadow: 0 4px 0 #a07020;
 }
 
-.game-btn:hover {
-  background: #3a3a3a;
-  color: #fff;
-}
-
-.game-btn:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 0 #a07020;
-}
-
 
 /* Carousel */
 .carousel-container {
@@ -146,7 +136,7 @@ footer {
 
 .carousel-track {
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
   gap: 1rem;
   scroll-behavior: smooth;
   padding: 1rem 0;
@@ -165,9 +155,7 @@ footer {
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
-
 }
-
 
 .project-card:hover {
   transform: scale(1.05);
@@ -272,6 +260,25 @@ a:visited {
   position: relative;
 }
 
+.modal-content::-webkit-scrollbar {
+  width: 15px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: #252835; 
+  border-radius: 15px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #484d64; 
+  border-radius: 15px;
+  border: 3px solid #252835; 
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background-color: #686d85; 
+}
+
 body.modal-open {
   overflow: hidden;
 }
@@ -282,7 +289,7 @@ body.modal-open {
   right: 1rem;
   font-size: 2rem;
   cursor: pointer;
-  color: #f0c040;
+  color: #2EC4B6;
   background: transparent;
   border: none;
 }
@@ -385,3 +392,11 @@ body.modal-open {
   display: flex;
   align-items: center;
 }
+
+.scroll-box {
+  height: 300px;
+  overflow-y: scroll;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
