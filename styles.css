@@ -363,9 +363,9 @@ body.modal-open {
 }
 
 .image-gallery img {
-  width: 100%;
-  max-width: 48%;
-  border-radius: 10px;
+  display: inline-block !important;
+  width: 190px;
+  height: 135px;
 }
 
 .image-text-pair {
