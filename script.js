@@ -72,7 +72,7 @@
     <div style="flex: 1 1 35%; min-width: 300px;">
       <p>Gameplay:</p>
       <video width="100%" controls>
-        <source src="assets/videos/ShelleyManor_Gameplay.mp4" type="video/mp4">
+        <source src="assets/videos/ShelleyManor_Attic.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -119,7 +119,7 @@
         <div style="flex: 1 1 35%; min-width: 300px;">
       <p>Gameplay:</p>
       <video width="100%" controls>
-        <source src="assets/videos/ShelleyManor_Gameplay.mp4" type="video/mp4">
+        <source src="assets/videos/ShelleyManor_Room1.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -167,7 +167,7 @@
         <div style="flex: 1 1 35%; min-width: 300px;">
       <p>Gameplay:</p>
       <video width="100%" controls>
-        <source src="assets/videos/ShelleyManor_Gameplay.mp4" type="video/mp4">
+        <source src="assets/videos/ShelleyManor_RoomBoss.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
