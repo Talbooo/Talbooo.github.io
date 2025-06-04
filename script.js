@@ -1,16 +1,6 @@
 ﻿document.addEventListener('DOMContentLoaded', () => {
   console.log("Script loaded!");
 
-// Buttons
-  const track = document.getElementById('carousel-track');
-  document.querySelector('.carousel-btn.left').addEventListener('click', () => {
-    track.scrollBy({ left: -420, behavior: 'smooth' });
-  });
-  document.querySelector('.carousel-btn.right').addEventListener('click', () => {
-    track.scrollBy({ left: 420, behavior: 'smooth' });
-  });
-  
-
   // Modal logic
   const modal = document.getElementById('project-modal');
   const modalContent = modal.querySelector('.modal-content');
@@ -219,8 +209,8 @@
       <br>
       <p> It was a week full of youtube tutorials and express coding classes. I'm now expanding my knowledge in coding so I can finish this project. </p>
       `,
-      screen1: 'assets/images/YouWontBeKing_Main.png',
-      screen2: 'assets/images/YouWontBeKing_Story.png',
+      screen1: 'assets/images/YouWontBeKing_Story.png',
+      screen2: 'assets/images/YouWontBeKing_Game.png',
       screen3: 'assets/images/YouWontBeKing_Game.png',
       screen4: 'assets/images/YouWontBeKing_Screen1.png',
       award1: 'none',
@@ -239,6 +229,46 @@
         <p> The idea for the project is to finish development and fix the bugs that were found.</p>
       `,
       link: 'https://talboo.itch.io/you-wont-be-king',
+      blueprintEmbed: '',
+      blueprintEmbed2: '',
+      blueprintEmbed3: '',
+    },
+
+    Penguin: {
+      title: "Penguin Puzzles",
+      maindescription: `
+        <p><strong>Penguin Puzzles</strong> is a short puzzle game developed on puzzlescript.</p>
+        <br>
+        <p> Follow little Puddles on their adventure to escape the igloo. Discover new magic along the way.</p>
+        <br>
+        <p>This game was created to test different engines and it took inspiration from the Ice gyms of Pokemon.</p>
+      `,
+      poster: 'assets/images/YouWontBeKing_Cover.png',
+      imagedescription: `This short project took a couple of days to develop and was fully made inside the engine of Puzzlescript. For the Itch.io page, a little photoshop was used. </p>
+      <br>
+      <p> Even though it was a short time for the development, I still think it's a pretty complete demo. </p>
+      <br>
+      `,
+      screen1: 'assets/images/Penguin_Menu.png',
+      screen2: 'assets/images/Penguin_Game.png',
+      screen3: 'assets/images/YouWontBeKing_Game.png',
+      screen4: 'assets/images/YouWontBeKing_Screen1.png',
+      award1: 'none',
+      award2: 'none',
+      award3: 'none',
+      award4: 'none',
+      videointro:'',
+      video: 'assets/videos/PenguinPuzzles_Gameplay.mp4',
+      video2: 'none',
+      videodescription: 'Full Gameplay as of June 2025',
+      fullbodytext:`
+        <p>For this project, I started investigating everything related to the engine, from the way it worked to the programming it used.</p>
+        <br>
+        <p> After a week or so familiarizing myself with the engine, I started desgining the puzzles, taking inspiration from similar ideas, mainly the ice gyms in the pokemon games.</p>
+        <br>
+        <p> The idea for this project is to continue developing it, adding more levels and maybe migrating to another engine.</p>
+      `,
+      link: 'https://talboo.itch.io/penguin-adventures',
       blueprintEmbed: '',
       blueprintEmbed2: '',
       blueprintEmbed3: '',
