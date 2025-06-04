@@ -18,6 +18,7 @@
   const openSound = new Audio('assets/audio/modal-open.flac');
   const closeSound = new Audio('assets/audio/modal-close.flac');
 
+
   // Project data
   const projectData = {
     ShelleyManor: {
@@ -30,7 +31,13 @@
         <p>The soundtrack, created by the Berkeley Campus in Valencia, features string and percussion instruments to enhance the atmosphere of mystery.</p>
       `,
       poster: 'assets/images/ShelleyManor_Poster.png',
-      imagedescription: 'Here is a great image description for you',
+      imagedescription: `
+      <p>For Shelley Manor I was in charge of part of the <strong>Game Design</strong> and everything related to <strong>Narrative Design</strong>.</p>
+      <br>
+      <p>For the Game Design part, I worked on most of the tutorial level, implementing the first gameplay the player experiences. I also did the last zone of the game, including the last two bosses; for this part I worked on <strong>Level Design</strong> and <strong>Gameplay</strong>.</p>
+      <br>
+      <p>The blueprints for my work in both the tutorial and the last zone can be see below:</p>  
+      `,
       screen1: 'assets/images/ShelleyManor_Screen1.png',
       screen2: 'assets/images/ShelleyManor_Screen2.png',
       screen3: 'assets/images/ShelleyManor_Screen1.png',
@@ -40,15 +47,160 @@
       award3: 'assets/images/ShelleyManorAwards/QuirinoAward.png',
       award4: 'assets/images/ShelleyManorAwards/WingsAward.png',
       videointro: `
-         <p>For the game, I wrote both the <a href="https://drive.google.com/file/d/1BS9l2T4QGATVrJFFrS13qonwXBXQkk6S/view?usp=sharing" target="_blank">script for the trailer</a> voiceover and the <a href="https://drive.google.com/file/d/1KLlfEYTBnX8Jr7Rh9ILxETPR6hixhg1Y/view?usp=sharing" target="_blank">script for the 2D Intro</a>.</p>
+         <p>Apart from that, I also did some work outside the game. I wrote both the <a href="https://drive.google.com/file/d/1BS9l2T4QGATVrJFFrS13qonwXBXQkk6S/view?usp=sharing" target="_blank">script for the trailer</a> voiceover and the <a href="https://drive.google.com/file/d/1KLlfEYTBnX8Jr7Rh9ILxETPR6hixhg1Y/view?usp=sharing" target="_blank">script for the 2D Intro</a>.</p>
          <br>
          
       `,
       video: 'assets/videos/ShelleyManor_Trailer.mp4',
       video2: 'assets/videos/ShelleyManor_Intro.mp4',
       videodescription: 'Official Trailer and 2D Game Intro',
-      fullbodytext: '<p> Shelley Manor has been nominated for several awards, winning one and being a finalist for the other four. The awards are: <strong>Winner</strong> of Best Student Game at Gamescom Latam BIG Festival 2025, <strong>TOP 5</strong> of Best Hobby Game at GDWC Winter Season Awards 2024, <strong>Finalist</strong> of Best Animation for Video Game at Quirino Awards 2025 and <strong>Finalist</strong> of Wings Award at Gamescom Latam BIG Festival 2025.',
-      link: 'https://store.steampowered.com/app/2999270/Shelley_Manor/'
+      fullbodytext: `<p> I also did some additional work to promote the game writing a couple of short stories for it that can be found <a href="https://drive.google.com/file/d/1a4U_WmdnK8Y6RMguQoVsb-5PJ6aEjhhD/view?usp=sharing" target="_blank">here</a> and <a href="https://drive.google.com/file/d/1k8zq5zxO0lXbAkkuR4j29lImMOcgVq4x/view?usp=sharing" target="_blank">here</a>. Credits for the art to <a href="https://www.artstation.com/laurarubert" target="_blank">Laura Rubert</a> and <a href="https://www.artstation.com/luciameca" target="_blank">Lucía Meca</a> in respective order.</p> 
+      <br>
+      <p>Shelley Manor has been nominated for several awards, winning one and being a finalist for the other four. The awards are: <strong>Winner</strong> of Best Student Game at Gamescom Latam BIG Festival 2025, <strong>TOP 5</strong> of Best Hobby Game at GDWC Winter Season Awards 2024, <strong>Finalist</strong> of Best Animation for Video Game at Quirino Awards 2025 and <strong>Finalist</strong> of Wings Award at Gamescom Latam BIG Festival 2025.</p>`,
+      link: 'https://store.steampowered.com/app/2999270/Shelley_Manor/',
+      blueprintEmbed: `
+      <p>Here you can see the attic's blueprint, gameplay and level:</p>
+      <iframe
+        src="https://blueprintue.com/render/ci65cx25/" 
+        width="100%"
+        height="500px"
+        frameborder="0"
+        allowfullscreen>
+        </iframe>
+    </div>
+
+    <div style="flex: 1 1 35%; min-width: 300px;">
+      <p>Gameplay:</p>
+      <video width="100%" controls>
+        <source src="assets/videos/ShelleyManor_Gameplay.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+
+  <div style="margin-top: 20px;">
+  <p>Level:</p>
+  <img 
+    id="Level-image"
+    src="assets/images/ShelleyManorLevels/AtticLevel.png" 
+    alt="Level Screenshot"
+    style="width: 100%; max-width: 800px; display: block; margin: 0 auto; cursor: pointer;"
+    onclick="openImageFullscreen(this)"
+  >
+</div>
+
+  <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px; flex-wrap: wrap;">
+    <img 
+      src="assets/images/ShelleyManorLevels/FinishedAttic.png" 
+      alt="Detail 1" 
+      style="flex: 1 1 45%; max-width: 400px; cursor: pointer;" 
+      onclick="openImageFullscreen(this)"
+    >
+    <img 
+      src="assets/images/ShelleyManorLevels/FinishedAttic2.png" 
+      alt="Detail 2" 
+      style="flex: 1 1 45%; max-width: 400px; cursor: pointer;" 
+      onclick="openImageFullscreen(this)"
+    >
+    <br>
+  </div>
+`,
+      blueprintEmbed2: `
+      <p>Here you can see the gameplay, level and blueprint for the first room of the Frankensteins:</p>
+      <iframe
+        src="https://blueprintue.com/render/cv5gw1si/" 
+        width="100%"
+        height="500px"
+        frameborder="0"
+        allowfullscreen>
+        </iframe>
+
+        <div style="flex: 1 1 35%; min-width: 300px;">
+      <p>Gameplay:</p>
+      <video width="100%" controls>
+        <source src="assets/videos/ShelleyManor_Gameplay.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+
+  <div style="margin-top: 20px;">
+  <p>Level:</p>
+  <img 
+    id="Level-image"
+    src="assets/images/ShelleyManorLevels/FirstRoomLevel.png" 
+    alt="Level Screenshot"
+    style="width: 100%; max-width: 800px; display: block; margin: 0 auto; cursor: pointer;"
+    onclick="openImageFullscreen(this)"
+  >
+</div>
+
+  <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px; flex-wrap: wrap;">
+    <img 
+      src="assets/images/ShelleyManorLevels/FinishedFirstLevel2.png" 
+      alt="Detail 1" 
+      style="flex: 1 1 45%; max-width: 400px; cursor: pointer;" 
+      onclick="openImageFullscreen(this)"
+    >
+    <img 
+      src="assets/images/ShelleyManorLevels/FinishedFirstLevel.png" 
+      alt="Detail 2" 
+      style="flex: 1 1 45%; max-width: 400px; cursor: pointer;" 
+      onclick="openImageFullscreen(this)"
+    >
+    <br>
+  </div>
+`,
+    
+      blueprintEmbed3: `
+      <p>Here you can see the gameplay, level and blueprint for the Frankensteins Boss Battle:</p>
+      <iframe
+        src="https://blueprintue.com/render/kq5rvka-/" 
+        width="100%"
+        height="500px"
+        frameborder="0"
+        allowfullscreen>
+        </iframe>
+
+        <div style="flex: 1 1 35%; min-width: 300px;">
+      <p>Gameplay:</p>
+      <video width="100%" controls>
+        <source src="assets/videos/ShelleyManor_Gameplay.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+
+  <div style="margin-top: 20px;">
+  <p>Level:</p>
+  <img 
+    id="Level-image"
+    src="assets/images/ShelleyManorLevels/BossRoomLevel.png" 
+    alt="Level Screenshot"
+    style="width: 100%; max-width: 800px; display: block; margin: 0 auto; cursor: pointer;"
+    onclick="openImageFullscreen(this)"
+  >
+</div>
+
+  <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px; flex-wrap: wrap;">
+    <img 
+      src="assets/images/ShelleyManorLevels/FinishedBossRoom.png" 
+      alt="Detail 1" 
+      style="flex: 1 1 45%; max-width: 400px; cursor: pointer;" 
+      onclick="openImageFullscreen(this)"
+    >
+    <img 
+      src="assets/images/ShelleyManorLevels/FinishedBossRoom2.png" 
+      alt="Detail 2" 
+      style="flex: 1 1 45%; max-width: 400px; cursor: pointer;" 
+      onclick="openImageFullscreen(this)"
+    >
+    <br>
+  </div>
+`,
     },
   
     YouWontBeKing: {
@@ -82,11 +234,14 @@
       fullbodytext:`
         <p>For this project, I was in charge of everything related to <strong>Game Design, Narrative Design</strong> and all of the <strong>Programming</strong>.</p>
         <br>
-        <p> It was fully developed in Unity in the span of one week. Everything related to art was done by Laura Rubert and Marcos Rodriguez</p>
+        <p> It was fully developed in Unity in the span of one week. Everything related to art was done by <a href="https://www.artstation.com/laurarubert" target="_blank">Laura Rubert</a> and <a href="https://www.artstation.com/marcos_rodriguez" target="_blank">Marcos Rodríguez</a>.</p>
         <br>
         <p> The idea for the project is to finish development and fix the bugs that were found.</p>
       `,
-      link: 'https://talboo.itch.io/you-wont-be-king'
+      link: 'https://talboo.itch.io/you-wont-be-king',
+      blueprintEmbed: '',
+      blueprintEmbed2: '',
+      blueprintEmbed3: '',
     }
   };
 
@@ -107,6 +262,10 @@
       document.getElementById('modal-videodescription').textContent = data.videodescription;
       document.getElementById('modal-link').href = data.link;
       document.getElementById('modal-text').innerHTML = data.fullbodytext;
+      document.getElementById('modal-blueprint').innerHTML = data.blueprintEmbed;
+      document.getElementById('modal-blueprint2').innerHTML = data.blueprintEmbed2;
+      document.getElementById('modal-blueprint3').innerHTML = data.blueprintEmbed3;
+
 
        const video1 = document.getElementById('modal-video-1');
        const video2 = document.getElementById('modal-video-2');
@@ -200,4 +359,16 @@
       closeModal();
     }
   });
+
+ window.openImageFullscreen = function(img) {
+  if (img.requestFullscreen) {
+    img.requestFullscreen();
+  } else if (img.webkitRequestFullscreen) {
+    img.webkitRequestFullscreen();
+  } else if (img.msRequestFullscreen) {
+    img.msRequestFullscreen();
+  }
+};
+
+
 });
