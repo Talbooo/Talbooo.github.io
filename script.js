@@ -243,7 +243,7 @@
         <br>
         <p>This game was created to test different engines and it took inspiration from the Ice gyms of Pokemon.</p>
       `,
-      poster: 'assets/images/YouWontBeKing_Cover.png',
+      poster: 'assets/images/Penguin_Cover.png',
       imagedescription: `This short project took a couple of days to develop and was fully made inside the engine of Puzzlescript. For the Itch.io page, a little photoshop was used. </p>
       <br>
       <p> Even though it was a short time for the development, I still think it's a pretty complete demo. </p>
