@@ -14,9 +14,9 @@
       <p class="typewriter">Narrative & Game Designer</p>
       <nav>
         <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
         <a href="#about">About me</a>
         <a href="#contact">Contact</a>
-
       </nav>
     </div>
   </header>
@@ -111,6 +111,65 @@
   </div>
 </div>
 </div> 
+
+
+<section id="writing" class="section">
+  <h2>Writing</h2>
+  <p><center>Each card will have a little description of the project as well as a short sample and a link to both the complete text and a project page if there is one.</center></p>
+  <br>
+  <div class="filter-buttons">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="script">Scripts</button>
+    <button data-filter="story">Short Stories</button>
+    <button data-filter="concept">Game Concepts</button>
+    <button data-filter="dialogue">Dialogue & Lore</button>
+  </div>
+
+<!-- Añadir Cartas -->
+<div class="grid" id="portfolioGrid">
+  <div class="card" data-category="script" data-card="ShelleyManorTrailer">
+    <h3>"Trailer Script"</h3>
+    <p>A script for the voiceover of Shelley Manor.</p>
+    <div class="tag">Script</div>
+  </div>
+  <div class="card" data-category="story" data-card="BurningHeart">
+    <h3>"A Burning Heart"</h3>
+    <p>A love story between the characters of Shelley Manor.</p>
+    <div class="tag">Short Story</div>
+  </div>
+  <div class="card" data-category="concept" data-card="ElephantCityConcept">
+    <h3>"Elephant City Adventures"</h3>
+    <p>Game Concept for a short platformer tablet game.</p>
+    <div class="tag">Game Concept</div>
+  </div>
+  <div class="card" data-category="concept" data-card="FallenKingRhainemour">
+    <h3>"Fallen King, Rhainemour"</h3>
+    <p>An enemy encounter concept for a souls-like game.</p>
+    <div class="tag">Game Concept</div>
+  </div>
+  <div class="card" data-category="dialogue" data-card="ShelleyManorLoreNotes">
+    <h3>"Shelley Manor" Lore</h3>
+    <p>Lore Notes from inside the game of Shelley Manor.</p>
+    <div class="tag">Dialogue & Lore</div>
+  </div>
+</div>
+
+
+
+<div class="modalW" id="modalW">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModalW">&times;</span>
+    <h2 id="modalW-title"></h2>
+    <div id="modalW-additional"></div>
+    <p id="modalW-sample"></p>
+    <p><a id="modalW-pdf" href="#" target="_blank">Read Full Text (PDF)</a></p>
+    <p><a id="modalW-link" href="#" target="_blank">Visit Project Page</a></p>
+  </div>
+</div>
+  </div>
+</section>
+
+
 
 
 

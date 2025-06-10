@@ -354,15 +354,6 @@
  });
 
 
-  function scrollCarousel(direction) {
-    const track = document.getElementById('carousel-track');
-    const cardWidth = 240 + 16; // card width + gap
-    track.scrollBy({
-      left: direction * cardWidth * 3, // scroll by 3 cards
-      behavior: 'smooth'
-    });
-  }
-
   function closeModal() {
     closeSound.play();
     modal.classList.remove('show');
@@ -400,5 +391,166 @@
   }
 };
 
+const filterButtons = document.querySelectorAll(".filter-buttons button");
+const cards = document.querySelectorAll(".card");
+const modalW = document.getElementById("modalW");
+const modalTextW = document.getElementById("modalTextW");
+const closeModalW = document.getElementById("closeModalW");
 
+const modalWData = {
+  ShelleyManorTrailer: {
+    title: "Shelley Manor Trailer",
+    description: "A script for the voiceover of Shelley Manor.",
+    sample: `
+    <center>     An excerpt of the script:
+    <br>
+    <br>
+    <strong>Old person:</strong>
+    <br>
+    There’s a manor on the outskirts.
+    <br>
+    <br>
+    <strong>Old person:</strong>
+    <br>
+    <p>People say there are monsters living
+    there</p>
+    (dry laugh)
+    <br>
+    <br>
+    <strong>Old person:</strong>
+    <br>
+    if only they knew...
+    <br>
+    <br>
+    <strong>Old person:</strong>
+    <br>
+    <p>There was once a foreigner, I can’t</p>
+    <p>quite seem to remember their name...</p>
+    (Pause while thinking)
+    <br>
+    <br>
+    <strong>Old person:</strong>
+    <br>
+    <p>Anyways, they didn’t seem to</p> 
+    <p>know about the rumors</p>
+    (Dry laugh again, without amusement,
+    more  
+    <p>of a “poor bastard” laugh)</p>
+    <br>
+    <br>`,
+    additional: `
+      <p>This script was written to create an atmosphere of mystery around the project, promoting both the game and the story.</p>
+      <br>
+    `,
+    pdf: "https://drive.google.com/file/d/1KLlfEYTBnX8Jr7Rh9ILxETPR6hixhg1Y/view?usp=sharing",
+    link: "https://www.youtube.com/watch?v=uukJZx18KDY",
+  },
+
+  BurningHeart: {
+    title: "A Burning Heart",
+    description: "A love story between the characters of Shelley Manor.",
+    sample: `
+    <center> 
+    <br>
+    An excerpt of the story:
+    <br>
+    <br>
+    <p>In his dreams he was human. One human body instead of an amalgamation of different
+    people.</p>
+    He would play with his friends, buy bread and go to the library. He would meet someone and
+    they would fall in love and they would have children and live peacefully. He would die of
+    natural causes or be killed, he didn’t care, he just wanted to be able to live normally and die
+    like a human. He would dance, clumsily, and step on his partners’ feet. She’d say “it’s okay,
+    you’re doing great” and he would laugh and continue, grabbing her waist with more strength
+    and pulling her closely. She would laugh too, moving her feet with the music and trying to
+    guide him. They would end up on the corners of the dance floor, staring awkwardly at the
+    other dancers and she would say “It was fun” and he would say “I haven’t had this much fun
+    in years!” and she would laugh and fill the room and he would stare at her and her smile. </center>
+    <br>
+`,
+    additional: `
+      <p>This short story explores the emotional journey of two of the enemies of Shelley Manor. This was written as part of the Firelight Fables collection created for the marketing of the project.</p>
+    `,
+    pdf: "https://drive.google.com/file/d/1a4U_WmdnK8Y6RMguQoVsb-5PJ6aEjhhD/view?usp=drive_link",
+    link: "https://store.steampowered.com/app/2999270/Shelley_Manor/",
+  },
+
+  ElephantCityConcept: {
+    title: "Elephant City Adventures Game Concept",
+    description: "Game Concept for a short platformer tablet game.",
+    sample: "",
+    additional: `
+      <p>Concept art and gameplay ideas for a vibrant puzzle platformer featuring an adventurous elephant.</p>
+    `,
+    pdf: "assets/docs/ElephantCityConcept.pdf",
+    link: "https://example.com/elephant-city-adventures",
+  },
+
+  FallenKingRhainemour: {
+    title: "Fallen King, Rhainemour Encounter Concept",
+    description: "A combat design concept of an enemy encounter of a souls-like game.",
+    sample: "",
+    additional: `
+      <p>Detailed design and mechanics for a challenging boss fight in a dark fantasy setting.</p>
+    `,
+    pdf: "assets/docs/.pdf",
+    link: "",
+  },
+
+  ShelleyManorLoreNotes: {
+    title: "Shelley Manor Lore Notes",
+    description: "Lore Notes from inside the game of Shelley Manor.",
+    sample: "",
+    additional: `
+      <p>Extensive lore about the mansion, characters, and mythological creatures present in Shelley Manor.</p>
+    `,
+    pdf: "assets/docs/.pdf",
+    link: "",
+  },
+};
+
+
+// Filtro
+filterButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelector(".filter-buttons .active").classList.remove("active");
+    btn.classList.add("active");
+    const filter = btn.dataset.filter;
+
+    cards.forEach(card => {
+      const category = card.dataset.category;
+      card.style.display = (filter === "all" || category === filter) ? "block" : "none";
+    });
+  });
+});
+
+// Click Card
+cards.forEach(card => {
+  card.addEventListener("click", () => {
+    const key = card.dataset.card; 
+    const data = modalWData[key];
+    if (!data) return;
+
+    document.getElementById("modalW-title").textContent = data.title;
+    document.getElementById("modalW-pdf").href = data.pdf || "#";
+    document.getElementById("modalW-link").href = data.link || "#";
+    document.getElementById("modalW-additional").innerHTML = data.additional || "";
+    document.getElementById("modalW-sample").innerHTML = data.sample;
+
+    modalW.style.display = "flex";
+  });
+});
+
+
+// Close modalW
+closeModalW.addEventListener("click", () => {
+  modalW.style.display = "none";
+});
+
+// Close modalW on outside click
+window.addEventListener("click", (e) => {
+  if (e.target === modalW) {
+    modalW.style.display = "none";
+  }
+});
 });
