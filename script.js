@@ -402,7 +402,7 @@ const modalWData = {
     title: "Shelley Manor Trailer",
     description: "A script for the voiceover of Shelley Manor.",
     sample: `
-    <center>     An excerpt of the script:
+    <center>An excerpt of the script:
     <br>
     <br>
     <strong>Old person:</strong>
@@ -475,12 +475,35 @@ const modalWData = {
     link: "https://store.steampowered.com/app/2999270/Shelley_Manor/",
   },
 
+  SightToDieFor: {
+    title: "A Sight to Die For",
+    description: "A love story between the characters of Shelley Manor.",
+    sample: `
+    <center> 
+    <br>
+    An excerpt of the story:
+    <br>
+    <br>
+    <p>“Oh my lord, you scared me shitless.” The animal sat down on her lap and stared at the sketches. He didn’t know it but in that form he was actually pretty cute. He started going through the pages, using his snout to pass from one to the other. It was mostly flowers so she didn’t really care too much. Most of the flowers had no color and the bat stopped on the ones that did out of curiosity. It was always the same two flowers: violets and lavender. </p>
+    <p>“Why do you always only paint those two?” She looked at the pages. Even though she wasn’t a painter, she was quite proud of those drawings.</p>
+    <br>
+    <p>“Violets are my favorites.” That was a lie, well, mostly a lie. She hadn’t had a favorite flower until close to a year ago, when someone she fancied gave her a bouquet.</p>
+ </center>
+    <br>
+`,
+    additional: `
+      <p>This short story explores the journey of two of the characters of Shelley Manor. This was written as part of the Firelight Fables collection created for the marketing of the project.</p>
+    `,
+    pdf: "https://drive.google.com/file/d/1k8zq5zxO0lXbAkkuR4j29lImMOcgVq4x/view?usp=sharing",
+    link: "https://store.steampowered.com/app/2999270/Shelley_Manor/",
+  },
+
   ElephantCityConcept: {
     title: "Elephant City Adventures Game Concept",
     description: "Game Concept for a short platformer tablet game.",
     sample: "",
     additional: `
-      <p>Concept art and gameplay ideas for a vibrant puzzle platformer featuring an adventurous elephant.</p>
+      <p>Concept gameplay ideas for a vibrant platformer featuring the adventures of an elephant.</p>
     `,
     pdf: "assets/docs/ElephantCityConcept.pdf",
     link: "https://example.com/elephant-city-adventures",
@@ -491,7 +514,7 @@ const modalWData = {
     description: "A combat design concept of an enemy encounter of a souls-like game.",
     sample: "",
     additional: `
-      <p>Detailed design and mechanics for a challenging boss fight in a dark fantasy setting.</p>
+      <p>Detailed design and mechanics for a boss fight in a dark fantasy setting.</p>
     `,
     pdf: "assets/docs/.pdf",
     link: "",
