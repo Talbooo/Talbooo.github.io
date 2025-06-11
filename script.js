@@ -22,7 +22,10 @@
       `,
       poster: 'assets/images/ShelleyManor_Poster.png',
       imagedescription: `
-      <p>For Shelley Manor I was in charge of part of the <strong>Game Design</strong> and everything related to <strong>Narrative Design</strong>.</p>
+      <p>This is the first big project I've participated on. It was done as a final project for my HND at ESAT Valencia. My tasks consisted of level 
+      design for the last part of the game, gameplay for lobby, attic and last zones as well as all lore notes and dialogues. Outside of the game, 
+      I’ve written three short stories that feature the characters of the game, worked on all the marketing posted on socials (Twitter and Instagram) 
+      and wrote the texts for steam and the store page.</p>
       <br>
       <p>For the Game Design part, I worked on most of the tutorial level, implementing the first gameplay the player experiences. I also did the last zone of the game, including the last two bosses; for this part I worked on <strong>Level Design</strong> and <strong>Gameplay</strong>.</p>
       <br>
@@ -500,35 +503,106 @@ const modalWData = {
 
   ElephantCityConcept: {
     title: "Elephant City Adventures Game Concept",
-    description: "Game Concept for a short platformer tablet game.",
-    sample: "",
-    additional: `
-      <p>Concept gameplay ideas for a vibrant platformer featuring the adventures of an elephant.</p>
+    description: "Game pitch for a short platformer tablet game.",
+    sample: `
+    <br> <center>
+    <p><strong>Target Audience:</strong> Ages 6-12 </p>
+    <p><strong>Genre:</strong> Platformer</p>
+    <p><strong>Platform:</strong> Mobile / Tablet</p>
+    <br>
+    <p><strong>STORY OVERVIEW:</strong></p>
+    In the bustling, colorful Elephant City, a place where elephants, animals and humans live
+    together in harmony, one special elephant named Ellie is on a mission: save the city (her home)
+    from a snack shortage! Ellie’s favorite snack, potato chips, have mysteriously disappeared from
+    all markets. It's up to Ellie to explore the city and gather the chips to restock her home!
+    But there’s a twist! The greedy group known as “Chip Bandits”, a group of mischievous
+    squirrels, have hidden the potato chips all over the city. Ellie must navigate the city’s streets,
+    parks, and skyscrapers to retrieve them while avoiding playful squirrel pranks!
+    </center>
+    <br>
     `,
-    pdf: "assets/docs/ElephantCityConcept.pdf",
-    link: "https://example.com/elephant-city-adventures",
+    additional: `
+      <p>Short Game pirch for a vibrant platformer featuring the adventures of an elephant. It includes story, mechanics, aesthetics and educational elements. As of June 2025, this project is not being developed but it will be sometime in the future. </p>
+    `,
+    pdf: "https://drive.google.com/file/d/1odPTmyI0DN_fx8nIoJBaldwpuYyMOY0h/view?usp=sharing",
+    link: "",
   },
 
   FallenKingRhainemour: {
     title: "Fallen King, Rhainemour Encounter Concept",
     description: "A combat design concept of an enemy encounter of a souls-like game.",
-    sample: "",
-    additional: `
-      <p>Detailed design and mechanics for a boss fight in a dark fantasy setting.</p>
+    sample: `
+    <br> <center><p><strong>BOSS DESCRIPTION:</strong></p>
+    Fallen King Rhainemour is a towering figure, clad in a full suit of jet-black armor etched with ancient sigils and promises. 
+    The armor is cracked, mostly due to time, and has twisted vines falling from the cracks, warping around; a dubious energy 
+    seeping out of them. His eyes glow faintly through the visor, an eerie sight for his enemies. His movements are slow and 
+    deliberate, but there’s a sense of impending doom with every hit. His weapon of choice is a massive, cursed greatsword, 
+    infused with some unknown power which makes it glow and leave a trail of light after each and every hit. As the fight progresses,
+    the sword becomes more animated, whispers growing louder as the light becomes a darker tone, ending in a black mist that surrounds 
+    both weapon and man.
+    <br> </center>
+    <br>
     `,
-    pdf: "assets/docs/.pdf",
+    additional: `
+      <p>Detailed design and mechanics for a boss fight in a dark fantasy setting. The full document includes: setting, fight phases, enemy attacks and scene changes.</p>
+    `,
+    pdf: "https://drive.google.com/file/d/1ufHFuDfG1j2qqtFdEeZDInl1I_zfHGkA/view?usp=sharing",
     link: "",
   },
 
   ShelleyManorLoreNotes: {
     title: "Shelley Manor Lore Notes",
     description: "Lore Notes from inside the game of Shelley Manor.",
-    sample: "",
-    additional: `
-      <p>Extensive lore about the mansion, characters, and mythological creatures present in Shelley Manor.</p>
+    sample: ` <br>
+    An example of one of the notes:
+    <center>
+    <br>
+    <p>Dear diary,</p> 
+    <br>
+    <p>What a wonderful day! The manor glowed with the celebration of my 27 birthday. Laughter, music</p> 
+    <p> and people filled every corner. The guests, attired with their greatest robes, basked</p> 
+    <p> in exquisite delicacies and enchanting dances by the warm fireplace. My heart filled with gratitude as I blew</p>
+    <p>the candles of my cake, adorned alongside my favorite flowers, the purple hyacinth. Fortune and</p> 
+    <p>love surround me, and my heart overflows with joy. </p>
+    <br>
+    <p>Clara</p>
+    </center>
     `,
-    pdf: "assets/docs/.pdf",
-    link: "",
+    additional: `
+      <p>Notes that extend upon the lore of the game, giving information about the story, the manor, the characters and mythological creatures present in Shelley Manor.</p>
+    `,
+    pdf: "https://drive.google.com/file/d/1IBrS5birdf7uCnVKTAWlspo3dC0WUWKC/view?usp=sharing",
+    link: "https://store.steampowered.com/app/2999270/Shelley_Manor/",
+  },
+
+    ShelleyManorDialogue: {
+    title: "Shelley Manor Dialogues",
+    description: "Dialogues from inside the game of Shelley Manor.",
+    sample: ` <center>
+    <br>
+    An excerpt of the dialogue:
+    <br>
+    <br>
+    <strong>CLARA SHELLEY</strong>
+    <br>
+    That zombie... It used to be dear to me. Please, be careful, he can't control himself now.
+    <br>
+    <br>
+    <strong>ALEX</strong>
+    <br>
+    <p>Who was he?</p>
+    <br>
+    <strong>CLARA SHELLEY</strong>
+    <br>
+    We met before we were cursed, many years ago. He was my husband once.
+    <br>
+    <br>
+    `,
+    additional: `
+      <p>There are two types of dialogue: Mandatory and Extra. The mandatory ones are tied to the gameplay and story of the game while the player can access the extras if actively speaking with Clara on several parts of the manor.</p>
+    `,
+    pdf: "https://drive.google.com/file/d/1ItsnObh8URSCfWkogiYcPrvcaWRFhxcF/view?usp=sharing",
+    link: "https://store.steampowered.com/app/2999270/Shelley_Manor/",
   },
 };
 
