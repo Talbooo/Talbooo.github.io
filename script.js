@@ -700,6 +700,78 @@ creations, each plate a masterpiece, each meal an experience to remember.</p>
     pdf: "https://drive.google.com/file/d/1ovcwcQ7OeSY6Dyzi44T6zPNfRlyKMaRK/view?usp=sharing",
     link: "",
   },
+
+  DisastrousCuisineGDD: {
+    title: "Disastrous Cuisine Game Design Document",
+    description: "",
+    sample: `
+    <br>
+    <br> <center>
+    <p>Disastrous Cuisine is a turn based combat game based around a restaurant. Due to the place's weird origins some ingredients have become living creatures and the player must defeat them to get the food.</p>
+    <br>
+    <p><strong>Genre</strong></p>
+    <p>Disastrous Cuisine is a turn-based combat game with a couple of rpg-like mechanics, as the player can upgrade the character’s different stats.</p>
+    <br>
+    <p><strong>Setting</strong></p>
+    <p>The game takes place inside a restaurant, using both the kitchen and the dining hall. The fights will occur inside the kitchen zone and the serving of dishes in the dining zone. The world the game happens in is a semi-fantasy modern world. It takes real life history and merges it with fantasy tones as the game is filled with enormous items and the enemies are magically alive.</p>
+    <br>
+    <p><strong>Audience</strong></p>
+    <p>The audience we are looking for is “all ages” as we aren’t going for a super bloody combat or really complex stories. We think the game can reach all audiences and entertain them. That's why our intended rating is “All ages”.</p>
+    
+    </center>
+    <br>
+    `,
+    additional: `
+      <p>For the development, I made both: a Game Pitch and a Game Design Document. This is a project that has been in development from february 2025 to june 2025. Plans for continuing it are still on hold, so the future is unclear.</p>
+    `,
+    pdf: "https://drive.google.com/file/d/1Vl-KroaEMwCONRj7KvTPzShZAFA0Z9zt/view?usp=sharing",
+    link: "",
+  },
+
+  YouWontBeKingGDD: {
+    title: "You Won't be King Game Design Document",
+    description: "",
+    sample: `
+    <br>
+    <br> <center>
+    <p>You won’t be king is a rhythm game based on the legend of Excalibur and the people that came before Arthur.</p>
+    <br>
+    <p>The player will play through 4 songs with
+increasing difficulty while trying to keep the sword inside the rock.
+Following the rhythm will be crucial as the songs get more complicated
+and they will have to learn how to manage their lives.</p>
+    </center>
+    <br>
+    `,
+    additional: `
+      <p>You Won't be King was developed as an entry for the <i>Pirate Software Game Jam 16</i>. I made the Game Design Document in the style they asked in the entry requirements.</p>
+    `,
+    pdf: "https://drive.google.com/file/d/1Hv9c3bOdKFcNK9ywXf2_ixuetoBcSlwJ/view?usp=sharing",
+    link: "",
+  },
+
+  CrimsonSightConcept: {
+    title: "Crimson Sight Game Concept",
+    description: "",
+    sample: `
+    <br>
+    <br> <center>
+    <p>Crimson Sight is a game concept I developed as a project for King’s and THU mentorship
+program. In this case, the game had to focus on diversity and inclusion, promoting awareness
+and respect for cultural, social, physical and/or psychological differences. Crimson Sight is an
+action-adventure game with a first person camera. The player would be able to play as two
+different main characters. In this document I will include the main concept I presented as part of
+the project, the characters made for it and a little introduction to the story that would be at the
+start of the game.</p>
+    </center>
+    <br>
+    `,
+    additional: `
+      <p>You Won't be King was developed as an entry for the <i>Pirate Software Game Jam 16</i>. I made the Game Design Document in the style they asked in the entry requirements.</p>
+    `,
+    pdf: "https://drive.google.com/file/d/1fufsaFTKgMp3igjax-UPE1E4lpQIoqC6/view?usp=sharing",
+    link: "",
+  },
 };
 
 
