@@ -487,7 +487,7 @@ const modalWData = {
       <p>This script was written to create an atmosphere of mystery around the project, promoting both the game and the story.</p>
       <br>
     `,
-    pdf: "https://drive.google.com/file/d/1KLlfEYTBnX8Jr7Rh9ILxETPR6hixhg1Y/view?usp=sharing",
+    pdf: "https://drive.google.com/file/d/1BS9l2T4QGATVrJFFrS13qonwXBXQkk6S/view?usp=sharing",
     link: `<a href="https://drive.google.com/file/d/1viN0K41-Xn878uRgTrbhV4wVc3_ls13B/view?usp=sharing" target="_blank">Watch Video</a>`,
   },
 
