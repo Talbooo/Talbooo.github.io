@@ -51,9 +51,19 @@
     <div class="modal-header">
       <img id="modal-poster" alt="Poster" />
       <p id="modal-maindescription">
-      </div>
-     <p><a id="modal-link" href="https://store.steampowered.com/app/2999270/Shelley_Manor/" target="_blank">Play here</a></p>
+      <div class="text-image-block">
+     <p><a id="modal-link" href="https://store.steampowered.com/app/2999270/Shelley_Manor/" target="_blank">Play Game</a></p>
     </div>
+    </div>
+      <div class="image-gallery">
+        <img id="award1">
+        <img id="award2">
+        <img id="award3">
+        <img id="award4">
+     </div>
+     <p id="modal-text"></p>
+   </div>
+
 
 
 
@@ -98,29 +108,21 @@
 
 
     <div class="text-image-block">
-      <p id="modal-text"></p>
-      <div class="image-gallery">
-        <img id="award1">
-        <img id="award2">
-        <img id="award3">
-        <img id="award4">
+      <p id="modal-extratext"></p>
       </div>
     </div>
-
-
   </div>
 </div>
 </div> 
 
 
 <section id="writing" class="section">
-  <h2>Writing</h2>
-  <p><center>Each card will have a little description of the project as well as a short sample and a link to both the complete text and a project page if there is one.</center></p>
+  <h2>Writing Samples</h2>
   <br>
   <div class="filter-buttons">
     <button class="active" data-filter="all">All</button>
     <button data-filter="script">Scripts</button>
-    <button data-filter="story">Short Stories</button>
+    <button data-filter="story">Stories</button>
     <button data-filter="concept">Design Documents</button>
     <button data-filter="dialogue">Dialogue & Lore</button>
   </div>
@@ -131,12 +133,14 @@
     <h3>"Trailer Script"</h3>
     <p>A script for the voiceover of Shelley Manor.</p>
     <div class="tag">Script</div>
+    <div class="tag">Shelley Manor</div>
   </div>
 
   <div class="card" data-category="story" data-card="BurningHeart">
     <h3>"A Burning Heart"</h3>
     <p>A love story between the characters of Shelley Manor.</p>
     <div class="tag">Short Story</div>
+    <div class="tag">Shelley Manor</div>
   </div>
 
   <div class="card" data-category="concept" data-card="ElephantCityConcept">
@@ -149,6 +153,7 @@
     <h3>"A Sight to Die For"</h3>
     <p>A love story between the characters of Shelley Manor.</p>
     <div class="tag">Short Story</div>
+    <div class="tag">Shelley Manor</div>
   </div>
 
   <div class="card" data-category="concept" data-card="FallenKingRhainemour">
@@ -160,13 +165,36 @@
   <div class="card" data-category="dialogue" data-card="ShelleyManorLoreNotes">
     <h3>"Shelley Manor" Lore</h3>
     <p>Lore Notes from inside the game of Shelley Manor.</p>
-    <div class="tag">Dialogue & Lore</div>
+    <div class="tag">Dialogue</div>
+    <div class="tag">Shelley Manor</div>
   </div>
 
   <div class="card" data-category="dialogue" data-card="ShelleyManorDialogue">
     <h3>"Shelley Manor" Dialogue</h3>
     <p>Lore Notes from inside the game of Shelley Manor.</p>
-    <div class="tag">Dialogue & Lore</div>
+    <div class="tag">Lore</div>
+    <div class="tag">Shelley Manor</div>
+  </div>
+
+  <div class="card" data-category="script" data-card="ShelleyManorIntro">
+    <h3>"Intro Script"</h3>
+    <p>A script for the voiceover of the 2D intro for Shelley Manor.</p>
+    <div class="tag">Script</div>
+    <div class="tag">Shelley Manor</div>
+  </div>
+
+  <div class="card" data-category="story" data-card="DisastrousCuisineStory">
+    <h3>"Disastrous Cuisine Story"</h3>
+    <p>Stories for a project made under the THU x King mentorship 2024-2025.</p>
+    <div class="tag">Story Compilation</div>
+    <div class="tag">Disastrous Cuisine</div>
+  </div>
+
+    <div class="card" data-category="concept" data-card="DisastrousCuisinePitch">
+    <h3>"Disastrous Cuisine Pitch"</h3>
+    <p>Game Pitch for a project made under the THU x King mentorship 2024-2025.</p>
+    <div class="tag">Game Pitch</div>
+    <div class="tag">Disastrous Cuisine</div>
   </div>
 
 
@@ -181,7 +209,7 @@
     <div id="modalW-additional"></div>
     <p id="modalW-sample"></p>
     <p><a id="modalW-pdf" href="#" target="_blank">Read Full Text (PDF)</a></p>
-    <p><a id="modalW-link" href="#" target="_blank">Visit Project Page</a></p>
+    <p><a id="modalW-link" href="#" target="_blank">AAA</a></p>
   </div>
 </div>
   </div>
@@ -189,10 +217,7 @@
 
 
 
-
-
-
-<section id="about" class="about-section">
+<section id="about" class="section">
   <div class="about-container">
     <img src="assets/images/me.jpeg" alt="ME!" class="about-image" />
     <div class="about-text">
@@ -201,7 +226,7 @@
         I'm Laura, a Spanish Game Designer specialized on narrative design. I work my best on a team and love working with others. I'm open to work on all aspects involving game design but prefer anything related to narrative design.
       </p> <br>
       <a href="assets/CV_LauraTalamanca.pdf" download>
-  <button>Download CV as PDF</button>
+  <button  id='download' type="button">Download CV as PDF</button>
 </a>
 
     </div>

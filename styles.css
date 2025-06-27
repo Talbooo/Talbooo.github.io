@@ -15,7 +15,6 @@ body {
 /* Título */
 .Me {
   height: 100vh;
-  background: linear-gradient(145deg, #1a1a1a, #111);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +28,7 @@ body {
 
 .typewriter {
   font-size: 1.5rem;
-  color: #2EC4B6;
+  color: #00ffd0;
   border-right: 2px solid;
   white-space: nowrap;
   overflow: hidden;
@@ -44,7 +43,7 @@ body {
 
 @keyframes blink {
   from, to { border-color: transparent }
-  50% { border-color: #2EC4B6 }
+  50% { border-color: #00ffd0 }
 }
 
 /* Links del landing */
@@ -53,7 +52,7 @@ body {
 }
 
 .Me nav a {
-  color: #2EC4B6;
+  color: #00ffd0;
   text-decoration: none;
   margin: 0 1rem;
   font-weight: bold;
@@ -103,7 +102,6 @@ h2 {
 footer {
   text-align: center;
   padding: 2rem;
-  background: #111;
   color: #888;
   font-size: 0.9rem;
 }
@@ -146,7 +144,6 @@ footer {
   width: 400px;
   height: 600px;
   background-color: #1c1c1c;
-  border: 2px solid #2EC4B6;
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -180,7 +177,7 @@ footer {
   background: none;
   border: none;
   font-size: 2rem;
-  color: #2EC4B6;
+  color: #00ffd0;
   cursor: pointer;
   padding: 0 1rem;
 }
@@ -435,8 +432,7 @@ body.modal-open {
 }
 
 .card {
-  background-color: #1c1c1c;
-  border: 0.1px solid #2EC4B6;
+  background-color: #323232;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -478,4 +474,13 @@ body.modal-open {
   padding: 2rem;
   border-radius: 8px;
   max-width: 600px;
+}
+
+#download{
+  margin: 0.3rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  border-radius: 5px;
 }

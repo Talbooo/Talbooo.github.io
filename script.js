@@ -14,11 +14,11 @@
     ShelleyManor: {
       title: 'Shelley Manor',
       maindescription: `
-        <p><strong>Shelley Manor</strong> is a combination of reality and fantasy in the modern era. It takes place in a mansion, which has an atmosphere of tension and mystery. The enemies that inhabit the mansion are familiar, as they are monsters from classical literature and mythology.</p>
+        <p><strong>Shelley Manor</strong> is a combination of reality and fantasy in the modern era. It takes place in a mansion, where the enemies are familiar, as they are monsters from classical literature and mythology.</p>
         <br>
         <p>The central focus of the gameplay is the exploration of the mansion from a third-person viewpoint, where the helpless player finds himself trapped and must avoid enemies while solving the puzzles. Hide through the levels, use objects to distract and confuse enemies, and interact with the environment to solve puzzles and escape alive.</p>
         <br>
-        <p>The soundtrack, created by the Berkeley Campus in Valencia, features string and percussion instruments to enhance the atmosphere of mystery.</p>
+        <p>The soundtrack, created by the Berklee Campus in Valencia, features string and percussion instruments to enhance the atmosphere of mystery.</p>
       `,
       poster: 'assets/images/ShelleyManor_Poster.png',
       imagedescription: `
@@ -40,16 +40,15 @@
       award3: 'assets/images/ShelleyManorAwards/QuirinoAward.png',
       award4: 'assets/images/ShelleyManorAwards/WingsAward.png',
       videointro: `
-         <p>Apart from that, I also did some work outside the game. I wrote both the <a href="https://drive.google.com/file/d/1BS9l2T4QGATVrJFFrS13qonwXBXQkk6S/view?usp=sharing" target="_blank">script for the trailer</a> voiceover and the <a href="https://drive.google.com/file/d/1KLlfEYTBnX8Jr7Rh9ILxETPR6hixhg1Y/view?usp=sharing" target="_blank">script for the 2D Intro</a>.</p>
+         <p>Apart from that, I also did some work outside the game. I wrote both the <a href="https://drive.google.com/file/d/1KLlfEYTBnX8Jr7Rh9ILxETPR6hixhg1Y/view?usp=sharing" target="_blank">script for the trailer</a> voiceover and the <a href="https://drive.google.com/file/d/1BS9l2T4QGATVrJFFrS13qonwXBXQkk6S/view?usp=sharing" target="_blank">script for the 2D Intro</a>.</p>
          <br>
          
       `,
       video: 'assets/videos/ShelleyManor_Trailer.mp4',
       video2: 'assets/videos/ShelleyManor_Intro.mp4',
       videodescription: 'Official Trailer and 2D Game Intro',
-      fullbodytext: `<p> I also did some additional work to promote the game writing a couple of short stories for it that can be found <a href="https://drive.google.com/file/d/1a4U_WmdnK8Y6RMguQoVsb-5PJ6aEjhhD/view?usp=sharing" target="_blank">here</a> and <a href="https://drive.google.com/file/d/1k8zq5zxO0lXbAkkuR4j29lImMOcgVq4x/view?usp=sharing" target="_blank">here</a>. Credits for the art to <a href="https://www.artstation.com/laurarubert" target="_blank">Laura Rubert</a> and <a href="https://www.artstation.com/luciameca" target="_blank">Lucía Meca</a> in respective order.</p> 
-      <br>
-      <p>Shelley Manor has been nominated for several awards, winning one and being a finalist for the other four. The awards are: <strong>Winner</strong> of Best Student Game at Gamescom Latam BIG Festival 2025, <strong>TOP 5</strong> of Best Hobby Game at GDWC Winter Season Awards 2024, <strong>Finalist</strong> of Best Animation for Video Game at Quirino Awards 2025 and <strong>Finalist</strong> of Wings Award at Gamescom Latam BIG Festival 2025.</p>`,
+      fullbodytext: `<p>Shelley Manor has been nominated for several awards, winning one and being a finalist for the other four. The awards are: <strong>Winner</strong> of Best Student Game at Gamescom Latam BIG Festival 2025, <strong>TOP 5</strong> of Best Hobby Game at GDWC Winter Season Awards 2024, <strong>Finalist</strong> of Best Animation for Video Game at Quirino Awards 2025 and <strong>Finalist</strong> of Wings Award at Gamescom Latam BIG Festival 2025.</p>`,
+      extratext: `<p> I also did some additional work to promote the game writing a couple of short stories for it that can be found <a href="https://drive.google.com/file/d/1a4U_WmdnK8Y6RMguQoVsb-5PJ6aEjhhD/view?usp=sharing" target="_blank">here</a> and <a href="https://drive.google.com/file/d/1k8zq5zxO0lXbAkkuR4j29lImMOcgVq4x/view?usp=sharing" target="_blank">here</a>. Credits for the art to <a href="https://www.artstation.com/laurarubert" target="_blank">Laura Rubert</a> and <a href="https://www.artstation.com/luciameca" target="_blank">Lucía Meca</a> in respective order.</p>`,
       link: 'https://store.steampowered.com/app/2999270/Shelley_Manor/',
       blueprintEmbed: `
       <p>Here you can see the attic's blueprint, gameplay and level:</p>
@@ -224,7 +223,8 @@
       video: 'assets/videos/YouWontBeKing_Gameplay.mp4',
       video2: 'none',
       videodescription: 'Main menu, story and game',
-      fullbodytext:`
+      fullbodytext: "",
+      extratext:`
         <p>For this project, I was in charge of everything related to <strong>Game Design, Narrative Design</strong> and all of the <strong>Programming</strong>.</p>
         <br>
         <p> It was fully developed in Unity in the span of one week. Everything related to art was done by <a href="https://www.artstation.com/laurarubert" target="_blank">Laura Rubert</a> and <a href="https://www.artstation.com/marcos_rodriguez" target="_blank">Marcos Rodríguez</a>.</p>
@@ -265,12 +265,14 @@
       video2: 'none',
       videodescription: 'Full Gameplay as of June 2025',
       fullbodytext:`
+      <br>
         <p>For this project, I started investigating everything related to the engine, from the way it worked to the programming it used.</p>
         <br>
         <p> After a week or so familiarizing myself with the engine, I started desgining the puzzles, taking inspiration from similar ideas, mainly the ice gyms in the pokemon games.</p>
         <br>
         <p> The idea for this project is to continue developing it, adding more levels and maybe migrating to another engine.</p>
       `,
+      extratext: "",
       link: 'https://talboo.itch.io/penguin-adventures',
       blueprintEmbed: '',
       blueprintEmbed2: '',
@@ -295,6 +297,7 @@
       document.getElementById('modal-videodescription').textContent = data.videodescription;
       document.getElementById('modal-link').href = data.link;
       document.getElementById('modal-text').innerHTML = data.fullbodytext;
+      document.getElementById('modal-extratext').innerHTML = data.extratext;
       document.getElementById('modal-blueprint').innerHTML = data.blueprintEmbed;
       document.getElementById('modal-blueprint2').innerHTML = data.blueprintEmbed2;
       document.getElementById('modal-blueprint3').innerHTML = data.blueprintEmbed3;
@@ -446,7 +449,46 @@ const modalWData = {
       <br>
     `,
     pdf: "https://drive.google.com/file/d/1KLlfEYTBnX8Jr7Rh9ILxETPR6hixhg1Y/view?usp=sharing",
-    link: "https://www.youtube.com/watch?v=uukJZx18KDY",
+    link: `<a href="https://www.youtube.com/watch?v=uukJZx18KDY" target="_blank">Watch on YouTube</a>`,
+  },
+
+  ShelleyManorIntro: {
+    title: "Shelley Manor Intro",
+    description: "A script for the voiceover of the intro for Shelley Manor.",
+    sample: `
+    <center>An excerpt of the script:
+    <br>
+    <br>
+    <i>[The townspeople are murmuring, everyone is restless]</i>
+    <br>
+    <br>
+    <strong>Mayor:</strong>
+    <br>
+    Good evening everyone. Thanks for coming in on such short notice.
+    <br>
+    <br>
+    <strong>Mayor:</strong>
+    <br>
+    <p>As we all know, monsters live among us in that wicked manor on the outskirts.</p> 
+    <p>And we all know the unforgivable act we commited years ago...</p> 
+    <p>We let them live here and, in exchange, they don't eat us or our loved ones.</p>
+    <br>
+    <i>[Uncomfortable murmurs of approval are heard]</i>
+    <br>
+    <br>
+    <strong>Mayor:</strong>
+    <br>
+    <p>However, these days, it seems the monsters are... dissatisfied.</p> 
+    <p>They demand we send more victims, or else...</p>
+    <br>
+    <br>
+    `,
+    additional: `
+      <p>This script was written to create an atmosphere of mystery around the project, promoting both the game and the story.</p>
+      <br>
+    `,
+    pdf: "https://drive.google.com/file/d/1KLlfEYTBnX8Jr7Rh9ILxETPR6hixhg1Y/view?usp=sharing",
+    link: `<a href="https://drive.google.com/file/d/1viN0K41-Xn878uRgTrbhV4wVc3_ls13B/view?usp=sharing" target="_blank">Watch Video</a>`,
   },
 
   BurningHeart: {
@@ -475,7 +517,7 @@ const modalWData = {
       <p>This short story explores the emotional journey of two of the enemies of Shelley Manor. This was written as part of the Firelight Fables collection created for the marketing of the project.</p>
     `,
     pdf: "https://drive.google.com/file/d/1a4U_WmdnK8Y6RMguQoVsb-5PJ6aEjhhD/view?usp=drive_link",
-    link: "https://store.steampowered.com/app/2999270/Shelley_Manor/",
+    link: `<a href="https://store.steampowered.com/app/2999270/Shelley_Manor/" target="_blank">Play Game On Steam</a>`,
   },
 
   SightToDieFor: {
@@ -498,7 +540,7 @@ const modalWData = {
       <p>This short story explores the journey of two of the characters of Shelley Manor. This was written as part of the Firelight Fables collection created for the marketing of the project.</p>
     `,
     pdf: "https://drive.google.com/file/d/1k8zq5zxO0lXbAkkuR4j29lImMOcgVq4x/view?usp=sharing",
-    link: "https://store.steampowered.com/app/2999270/Shelley_Manor/",
+    link: `<a href="https://store.steampowered.com/app/2999270/Shelley_Manor/" target="_blank">Play Game On Steam</a>`,
   },
 
   ElephantCityConcept: {
@@ -522,7 +564,7 @@ const modalWData = {
     <br>
     `,
     additional: `
-      <p>Short Game pirch for a vibrant platformer featuring the adventures of an elephant. It includes story, mechanics, aesthetics and educational elements. As of June 2025, this project is not being developed but it will be sometime in the future. </p>
+      <p>Short Game Pitch for a vibrant platformer featuring the adventures of an elephant. It includes story, mechanics, aesthetics and educational elements. As of June 2025, this project is not being developed but it will be sometime in the future. </p>
     `,
     pdf: "https://drive.google.com/file/d/1odPTmyI0DN_fx8nIoJBaldwpuYyMOY0h/view?usp=sharing",
     link: "",
@@ -572,7 +614,7 @@ const modalWData = {
       <p>Notes that extend upon the lore of the game, giving information about the story, the manor, the characters and mythological creatures present in Shelley Manor.</p>
     `,
     pdf: "https://drive.google.com/file/d/1IBrS5birdf7uCnVKTAWlspo3dC0WUWKC/view?usp=sharing",
-    link: "https://store.steampowered.com/app/2999270/Shelley_Manor/",
+    link: `<a href="https://store.steampowered.com/app/2999270/Shelley_Manor/" target="_blank">Play Game On Steam</a>`,
   },
 
     ShelleyManorDialogue: {
@@ -602,7 +644,61 @@ const modalWData = {
       <p>There are two types of dialogue: Mandatory and Extra. The mandatory ones are tied to the gameplay and story of the game while the player can access the extras if actively speaking with Clara on several parts of the manor.</p>
     `,
     pdf: "https://drive.google.com/file/d/1ItsnObh8URSCfWkogiYcPrvcaWRFhxcF/view?usp=sharing",
-    link: "https://store.steampowered.com/app/2999270/Shelley_Manor/",
+    link: `<a href="https://store.steampowered.com/app/2999270/Shelley_Manor/" target="_blank">Play Game On Steam</a>`,
+  },
+
+  DisastrousCuisineStory: {
+    title: "Disastrous Cuisine Stories",
+    description: "",
+    sample: ` <center>
+    <br>
+    An excerpt of the one of the stories:
+    <br>
+    <br>
+    <strong>Jorge</strong>
+    <br>
+    <p>Chef, there’s a dish I’ve been trying to perfect for years.</p> 
+    <p>My wife; she used to make “tortilla de patatas”. It was her favorite.</p>
+    <p>I’ve tried to do it myself... and I still haven’t gotten it.</p>
+    <br>
+    <strong>Giusseppe</strong>
+    <br>
+    <p>What’s been the hardest part?</p>
+    <br>
+    <strong>Jorge</strong>
+    <br>
+    It’s... the taste. I try to recreate it, but it feels impossible at this point.
+    <br>
+    <br>
+    `,
+    additional: `
+      <p>I wrote 6 different stories for this game, the Team voted for 3 of them and we added those. This is a project that has been in development from february 2025 to june 2025. Plans for continuing it are still on hold, so the future is unclear.</p>
+    `,
+    pdf: "https://drive.google.com/file/d/1uhsRcWCzsbigtWcXJG20jPzOh-eN-tDY/view?usp=sharing",
+    link: ``,
+  },
+
+  DisastrousCuisinePitch: {
+    title: "Disastrous Cuisine Game Concept",
+    description: "",
+    sample: `
+    <br>
+    <br> <center>
+    <p>Disastrous Cuisine is a turn based combat game based around a restaurant. Due to the place's weird origins some ingredients have become living creatures and the player must defeat them to get the food.</p>
+    <br>
+    <p>The Golden Ladle had once been the pinnacle of fine dining, a restaurant revered for its
+exquisite dishes crafted by the legendary Chef. From the delicate art of Japanese sushi
+to the rich, comforting embrace of Italian pasta, he had mastered the flavors of the world,
+filling with joy all who dined there. Customers traveled far and wide just to taste his
+creations, each plate a masterpiece, each meal an experience to remember.</p>
+    </center>
+    <br>
+    `,
+    additional: `
+      <p>For the development, I made both: a Game Pitch and a Game Design Document. This is a project that has been in development from february 2025 to june 2025. Plans for continuing it are still on hold, so the future is unclear.</p>
+    `,
+    pdf: "https://drive.google.com/file/d/1ovcwcQ7OeSY6Dyzi44T6zPNfRlyKMaRK/view?usp=sharing",
+    link: "",
   },
 };
 
@@ -630,9 +726,22 @@ cards.forEach(card => {
 
     document.getElementById("modalW-title").textContent = data.title;
     document.getElementById("modalW-pdf").href = data.pdf || "#";
-    document.getElementById("modalW-link").href = data.link || "#";
     document.getElementById("modalW-additional").innerHTML = data.additional || "";
     document.getElementById("modalW-sample").innerHTML = data.sample;
+
+    const linkElem = document.getElementById("modalW-link");
+
+    if (data.link) {
+        const tempDiv = document.createElement("div");
+        tempDiv.innerHTML = data.link;
+        const realLink = tempDiv.querySelector("a");
+
+        linkElem.href = realLink.href;
+        linkElem.innerHTML = realLink.innerHTML;
+        linkElem.parentElement.style.display = "block"; 
+     } else {
+        linkElem.parentElement.style.display = "none";
+    }
 
     modalW.style.display = "flex";
   });
