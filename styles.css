@@ -196,7 +196,7 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  max-width: 1000px;
+  max-width: 1200px;
   min-height: 900px;
   margin: 0 auto;
   flex-wrap: wrap; 
@@ -484,3 +484,44 @@ body.modal-open {
   cursor: pointer;
   border-radius: 5px;
 }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* Remove default bullets and set up space */
+.grid-item ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.grid-item ul li {
+  position: relative;
+  padding-left: 28px; 
+  margin-bottom: 8px;
+}
+
+.grid-item ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  background-image: url('assets/images/BulletPoint.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: Jitter 0.65s infinite;
+}
+
+@keyframes Jitter {
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  25% { transform: translate(0.5px, -0.5px) rotate(-1deg); }
+  50% { transform: translate(-0.5px, 0.5px) rotate(1deg); }
+  75% { transform: translate(0.5px, 0.5px) rotate(-0.5deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
